@@ -10,14 +10,14 @@ const Home = () => {
 						<li className="content-list__item">
 							<h2 className="title-2">Frontend</h2>
 							<p>
-								JavaScript, TypeScript, ReactJS, Redux,
-								HTML, CSS, NPM, BootStrap, MaterialUI, Yarn,
+								JavaScript, ReactJS, 
+								HTML, CSS, NPM,
 								TailwindCSS
 							</p>
 						</li>
 						<li className="content-list__item">
 							<h2 className="title-2">Backend</h2>
-							<p>NodeJS</p>
+							<p>soon</p>
 						</li>
 					</ul>
 				</div>
