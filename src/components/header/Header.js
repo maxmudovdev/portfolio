@@ -6,16 +6,14 @@ const Header = () => {
 			<div className="header__wrapper">
 				<h1 className="header__title">
 					<strong>
-						Hi, my name is <em>Ulugbek</em>
+						ERROR 404
 					</strong>
-					<br/> a frontend developer
+					<br/> 
 				</h1>
 				<div className="header__text">
-					<p>with passion for learning and creating.</p>
+					<p>something went wrong</p>
 				</div>
-				<a href="https://drive.google.com/file/d/1e0WUKfzbPMi95CtFc0SsrfoUgXgaaoyI/view?usp=sharing" className="btn">
-					Download CV
-				</a>
+				
 			</div>
 		</header>
 	);
