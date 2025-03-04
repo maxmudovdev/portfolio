@@ -6,12 +6,12 @@ const Header = () => {
 			<div className="header__wrapper">
 				<h1 className="header__title">
 					<strong>
-						ERROR 404
+						Makhmudov Ulugbek
 					</strong>
 					<br/> 
 				</h1>
 				<div className="header__text">
-					<p>something went wrong</p>
+					<p>Frontend Developer</p>
 				</div>
 				
 			</div>
