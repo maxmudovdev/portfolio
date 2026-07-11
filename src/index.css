@@ -418,24 +418,114 @@ button {
   .ide-shell {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+    height: 100dvh;
   }
+
+  /* Sidebar collapses into a slim top bar: brand + socials only.
+     File switching already lives in the tab bar, so we don't duplicate it. */
   .sidebar {
+    flex-direction: row;
+    align-items: center;
     border-right: none;
     border-bottom: 1px solid var(--border);
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px 0;
-    max-height: 45vh;
+    padding: 8px 10px;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
+
   .sidebar-brand {
     border-bottom: none;
     margin-bottom: 0;
-    width: 100%;
+    padding: 0;
+    font-size: 13px;
+    flex-shrink: 0;
   }
+
+  .sidebar-section-label {
+    display: none;
+  }
+
+  .file-list {
+    display: none;
+  }
+
+  .social-list {
+    display: flex;
+    gap: 2px;
+    margin: 0 0 0 auto;
+    flex-shrink: 0;
+  }
+
+  .social-item {
+    padding: 8px;
+    min-width: 36px;
+    min-height: 36px;
+    justify-content: center;
+  }
+
+  .social-item span {
+    display: none;
+  }
+
   .sidebar-status {
-    margin-top: 0;
-    border-top: none;
+    display: none;
+  }
+
+  /* Tab bar becomes the primary navigation on mobile */
+  .tab-bar {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab {
+    padding: 10px 14px;
+    font-size: 12.5px;
+  }
+
+  .pane-body {
+    padding: 16px 0 24px;
+  }
+
+  .code-lines {
+    font-size: 12.5px;
+    line-height: 1.75;
+  }
+
+  .code-line {
+    padding: 0 12px;
+  }
+
+  .line-no {
+    width: 20px;
+    margin-right: 12px;
+    font-size: 11px;
+  }
+
+  .status-bar {
+    font-size: 10px;
+    gap: 10px;
+    padding: 6px 12px;
+  }
+
+  .boot-body {
+    padding: 16px 14px 22px;
+    font-size: 12.5px;
+    min-height: 160px;
+  }
+
+  .boot-logo-text {
+    font-size: 17px;
+  }
+
+  .ambient-glyph {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .status-bar span:nth-child(3),
+  .status-bar span:nth-child(4) {
+    display: none;
   }
 }
 
